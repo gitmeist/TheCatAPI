@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michis App</title>
+</head>
+<body>
+    <h1>Michis app</h1>
+
+    <span id="error"></span>
+
+    <section id="randomMichis">
+        <h2>Random michis</h2>
+        
+        <article>
+            <img id="img1" width="150" alt="Random michi pic">
+            <button id="btn1" >
+                Save michis in favorites
+            </button>
+        </article>
+
+        <article>
+            <img id="img2" width="150" alt="Random michi pic">
+            <button id="btn2"  > 
+                Save michis in favorites
+            </button>
+        </article>
+
+        <button onclick="loadRandomMichis()">Reload</button>
+    </section>
+
+    <section id="uploadingMichi">
+        <h2>Upload the michi's pic</h2>
+        <form id="uploadingform">
+            <input id="file" type="file" name="file">
+            <button type="button" onclick="uploadMichiPhoto()">Upload a michi's pic</button>
+        </form>
+    </section>
+
+    <section id="favoriteMichis">
+        <h2>favorite Michis</h2>
+       
+        <article>
+            <img id="img1" width="150" alt="Random michi pic">
+            <button>Remove this michi from favorites</button>
+        </article>
+    </section>
+
+    
+
+
+    <script src="main.js"></script>
+    <!-- Activate to use Axios library -->
+   <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+</body>
+</html>
